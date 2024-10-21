@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Matrícula - Centro Infantil Veronas Davit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="form.css"> <!-- Link para o seu CSS -->
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">FICHA DE MATRÍCULA PARA O CENTRO INFANTIL VERONAS DAVIT</h1>
+        <p class="text-center">Ano lectivo: ______/_______</p>
+        <p>Solicitamos que façam a leitura detalhada e preencham cuidadosamente os dados. Favor atentar-se ao Termo de compromisso firmado ao final da matrícula. Os dados fornecidos são de inteira responsabilidade dos pais e encarregado de educação.</p>
+
+        <form action="/submit" method="POST" class="mt-4">
+            <!-- Informações Pessoais -->
+            <h2>1. Informações Pessoais</h2>
+            <div class="mb-3">
+                <label for="child_name" class="form-label">Nome da Criança</label>
+                <input type="text" class="form-control" id="child_name" name="child_name" required>
+            </div>
+            <div class="mb-3">
+                <label for="parent1" class="form-label">Filho (a) de:</label>
+                <input type="text" class="form-control" id="parent1" name="parent1" required placeholder="Nome do pai ou mãe">
+            </div>
+            <div class="mb-3">
+                <label for="parent2" class="form-label">E de:</label>
+                <input type="text" class="form-control" id="parent2" name="parent2" required placeholder="Nome do outro responsável">
+            </div>
+            <div class="mb-3">
+                <label for="birthdate" class="form-label">Nascido (a) aos</label>
+                <input type="date" class="form-control" id="birthdate" name="birthdate" required>
+            </div>
+            <div class="mb-3">
+                <label for="birthplace" class="form-label">Em:</label>
+                <input type="text" class="form-control" id="birthplace" name="birthplace" required placeholder="Local de nascimento">
+            </div>
+            <div class="mb-3">
+                <label for="province" class="form-label">Província:</label>
+                <input type="text" class="form-control" id="province" name="province" required>
+            </div>
+            <div class="mb-3">
+                <label for="bi_number" class="form-label">Céd. B.I. Nº</label>
+                <input type="text" class="form-control" id="bi_number" name="bi_number">
+            </div>
+
+            <!-- Informações de Contato -->
+            <h2>Informações de Contato</h2>
+            <div class="mb-3">
+                <label for="address" class="form-label">Morada</label>
+                <input type="text" class="form-control" id="address" name="address">
+            </div>
+            <div class="mb-3">
+                <label for "guardian_name">Encarregado (a)</label>
+                <input type "text"class= "form-control"id= "guardian_name"name= "guardian_name"/>
+            </div>
+            <div class= "mb-3">
+                <label for= "phone_number_1">Te. Nº</label>
+                <input type= "tel"class= "form-control"id= "phone_number_1"name= "phone_number_1"/>
+            </div>
+
+            <!-- Escolha do Curso -->
+            <h2>Escolha do Curso</h2>
+            <!-- Exemplo para Creche/Berçário -->
+            Creche/Berçário:
+            <select name= "creche_bercario"class= "form-select"id= "creche_bercario">
+                <!-- Adicione opções conforme necessário -->
+                <!-- Exemplo: -->
+                <option value= "pureza_a">Sala Pureza A (Dos 06 meses / 11 meses)</option>
+                <!-- Adicione mais opções aqui -->
+                 ...
+             </select><br/>
+             
+             Jardim de Infância:
+             ...
+             <!-- Continue com as outras opções conforme necessário -->
+
+             <!-- Quem virá buscar a criança habitualmente? -->
+             ...
+             <!-- Adicione os campos para quem virá buscar a criança -->
+
+             <!-- Contato em caso de emergência -->
+             ...
+             <!-- Adicione os campos para contatos de emergência -->
+
+             <!-- Seguro e Problemas de Saúde -->
+             ...
+             <!-- Adicione perguntas sobre seguro e problemas médicos -->
+
+             <!-- Termo de Responsabilidade -->
+             ...
+             <!-- Adicione o termo de responsabilidade aqui -->
+
+         </div>
+
+         <!-- Botão para enviar o formulário -->
+         <button type= "submit"class= "btn btn-success">Enviar Matrícula</button>
+
+         <!-- Botão para voltar à página inicial -->
+         <a href="/"class= "btn btn-secondary mt-3">Voltar para a Página Inicial</a> 
+     </form>
+
+     <!-- Script do Bootstrap -->
+     <script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+ </body> 
+</html>

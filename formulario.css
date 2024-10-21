@@ -1,0 +1,114 @@
+/* Estilo geral da página */
+body {
+    background-image: url('caminho/para/imagem-textura.jpg');
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+input,
+textarea,
+select {
+    border: 2px solid #007BFF; /* Borda azul */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    width: 200px; /* Largura total */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: border-color 0.3s ease; /* Transição suave na borda */
+   
+}
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #0056b3; /* Mudança de cor ao focar */
+    outline: none; /* Remove contorno padrão do navegador */
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5); /* Sombra ao focar */
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px; /* Adiciona preenchimento em telas menores */
+    }
+}
+
+
+/* Estilo do container do formulário */
+.container {
+   
+    
+    background-size: cover; /* Faz com que a imagem cubra todo o contêiner */
+    background-position: center; /* Centraliza a imagem */
+    border: 2px solid #007BFF; /* Borda azul */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 900px; /* Largura máxima do formulário */
+    margin: auto; /* Centraliza o formulário na página */
+
+
+}
+
+/* Estilo dos títulos */
+h1 {
+    color: #007BFF; /* Cor do título principal */
+    text-align: center;
+}
+
+h2 {
+    color: #100101; /* Cor dos subtítulos */
+}
+
+/* Estilo dos campos do formulário */
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+select {
+    width: 100%; /* Largura total dos campos */
+    padding: 15px; /* Espaçamento interno dos campos */
+    margin-bottom: 15px; /* Margem inferior entre os campos */
+    border-radius: 5px; /* Bordas arredondadas nos campos */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    height: 50px; /* Aumenta a altura do textarea */
+}
+
+
+.btn {
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-success {
+    background-color: green;
+    color: white;
+}
+
+.btn-danger.limpiar-btn {
+    background-color: red; /* Cor vermelha */
+    color: white; /* Texto branco */
+}
+
+.btn-secondary {
+    background-color:  #0056b3;
+    color: white;
+    text-decoration: none;
+    
+}
+.btn-custom:hover {
+    background-color: #218838; /* Cor de fundo ao passar o mouse */
+}
+
+
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="tel"]:hover,
+select:hover {
+    background-color: #dce2e3; /* Cor de fundo ao passar o mouse */
+    border-color: #082271; /* Cor da borda ao passar o mouse */
+}

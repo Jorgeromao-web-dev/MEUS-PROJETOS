@@ -1,0 +1,35 @@
+body {
+    background-color: #f8f9fa; /* Cor de fundo clara */
+}
+
+h1, h2 {
+    color: #343a40; /* Cor escura para os títulos */
+}
+
+.navbar {
+    background-color: #ffffff; /* Fundo branco para a navbar */
+}
+
+.btn-success {
+    background-color: #28a745; /* Verde padrão do Bootstrap */
+}
+
+.carousel-item img {
+    border-radius: 10px; /* Bordas arredondadas nas imagens do carrossel */
+}
+.logo-border {
+    border: 5px solid rgb(18, 213, 243); /* Define a cor e a espessura da borda */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+footer {
+    background-color: #ffffff; /* Fundo branco */
+    padding-top: 20px;
+ }
+ 
+ footer .list-inline-item a {
+    color: #28a745; /* Cor verde */
+ }
+ 
+ footer .list-inline-item a:hover {
+    text-decoration: underline; /* Efeito hover nos links */
+ }
